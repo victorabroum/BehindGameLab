@@ -16,6 +16,8 @@
 		7657FFCF231ABAA900552755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7657FFCE231ABAA900552755 /* Assets.xcassets */; };
 		7657FFD2231ABAA900552755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7657FFD0231ABAA900552755 /* LaunchScreen.storyboard */; };
 		7657FFDA231ABAE600552755 /* SKButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657FFD9231ABAE600552755 /* SKButtonNode.swift */; };
+		7657FFDC231E0E6700552755 /* SquareEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657FFDB231E0E6700552755 /* SquareEntity.swift */; };
+		7657FFE0231E0EAD00552755 /* CircleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657FFDF231E0EAD00552755 /* CircleEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		7657FFD1231ABAA900552755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7657FFD3231ABAA900552755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7657FFD9231ABAE600552755 /* SKButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKButtonNode.swift; sourceTree = "<group>"; };
+		7657FFDB231E0E6700552755 /* SquareEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareEntity.swift; sourceTree = "<group>"; };
+		7657FFDF231E0EAD00552755 /* CircleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +75,27 @@
 				7657FFCE231ABAA900552755 /* Assets.xcassets */,
 				7657FFD0231ABAA900552755 /* LaunchScreen.storyboard */,
 				7657FFD3231ABAA900552755 /* Info.plist */,
-				7657FFD9231ABAE600552755 /* SKButtonNode.swift */,
+				7657FFDE231E0E7500552755 /* CustomNodes */,
+				7657FFDD231E0E6D00552755 /* Entities */,
 			);
 			path = SKButtonNode;
+			sourceTree = "<group>";
+		};
+		7657FFDD231E0E6D00552755 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7657FFDB231E0E6700552755 /* SquareEntity.swift */,
+				7657FFDF231E0EAD00552755 /* CircleEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7657FFDE231E0E7500552755 /* CustomNodes */ = {
+			isa = PBXGroup;
+			children = (
+				7657FFD9231ABAE600552755 /* SKButtonNode.swift */,
+			);
+			path = CustomNodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7657FFE0231E0EAD00552755 /* CircleEntity.swift in Sources */,
 				7657FFC8231ABAA500552755 /* GameScene.swift in Sources */,
+				7657FFDC231E0E6700552755 /* SquareEntity.swift in Sources */,
 				7657FFDA231ABAE600552755 /* SKButtonNode.swift in Sources */,
 				7657FFCA231ABAA500552755 /* GameViewController.swift in Sources */,
 				7657FFC2231ABAA500552755 /* AppDelegate.swift in Sources */,
