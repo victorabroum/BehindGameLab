@@ -18,8 +18,12 @@
 		7657FFDA231ABAE600552755 /* SKButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657FFD9231ABAE600552755 /* SKButtonNode.swift */; };
 		7657FFDC231E0E6700552755 /* SquareEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657FFDB231E0E6700552755 /* SquareEntity.swift */; };
 		7657FFE0231E0EAD00552755 /* CircleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657FFDF231E0EAD00552755 /* CircleEntity.swift */; };
+		7673EBA62322C7E8005A26C6 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673EBA52322C7E8005A26C6 /* UIColor+Extensions.swift */; };
 		76A63B2F231F25430089216C /* CircleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A63B2E231F25430089216C /* CircleComponent.swift */; };
 		76A63B31231F25510089216C /* SquareComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A63B30231F25510089216C /* SquareComponent.swift */; };
+		76CDC93C2323E9B300040021 /* ClickComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CDC93B2323E9B300040021 /* ClickComponent.swift */; };
+		76CDC93F2323EAF600040021 /* ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CDC93E2323EAF600040021 /* ButtonActions.swift */; };
+		76CDC9412323EDF100040021 /* LabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CDC9402323EDF100040021 /* LabelComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +40,12 @@
 		7657FFD9231ABAE600552755 /* SKButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKButtonNode.swift; sourceTree = "<group>"; };
 		7657FFDB231E0E6700552755 /* SquareEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareEntity.swift; sourceTree = "<group>"; };
 		7657FFDF231E0EAD00552755 /* CircleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleEntity.swift; sourceTree = "<group>"; };
+		7673EBA52322C7E8005A26C6 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		76A63B2E231F25430089216C /* CircleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleComponent.swift; sourceTree = "<group>"; };
 		76A63B30231F25510089216C /* SquareComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareComponent.swift; sourceTree = "<group>"; };
+		76CDC93B2323E9B300040021 /* ClickComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickComponent.swift; sourceTree = "<group>"; };
+		76CDC93E2323EAF600040021 /* ButtonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActions.swift; sourceTree = "<group>"; };
+		76CDC9402323EDF100040021 /* LabelComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 		7657FFC0231ABAA500552755 /* SKButtonNode */ = {
 			isa = PBXGroup;
 			children = (
+				76CDC93D2323EAE700040021 /* Factory */,
 				7657FFC1231ABAA500552755 /* AppDelegate.swift */,
 				7657FFC3231ABAA500552755 /* GameScene.sks */,
 				7657FFC5231ABAA500552755 /* Actions.sks */,
@@ -82,6 +91,7 @@
 				7657FFDE231E0E7500552755 /* CustomNodes */,
 				76A63B2D231F25260089216C /* Components */,
 				7657FFDD231E0E6D00552755 /* Entities */,
+				7673EBA52322C7E8005A26C6 /* UIColor+Extensions.swift */,
 			);
 			path = SKButtonNode;
 			sourceTree = "<group>";
@@ -108,8 +118,18 @@
 			children = (
 				76A63B2E231F25430089216C /* CircleComponent.swift */,
 				76A63B30231F25510089216C /* SquareComponent.swift */,
+				76CDC93B2323E9B300040021 /* ClickComponent.swift */,
+				76CDC9402323EDF100040021 /* LabelComponent.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		76CDC93D2323EAE700040021 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				76CDC93E2323EAF600040021 /* ButtonActions.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +207,15 @@
 			files = (
 				7657FFE0231E0EAD00552755 /* CircleEntity.swift in Sources */,
 				76A63B2F231F25430089216C /* CircleComponent.swift in Sources */,
+				76CDC9412323EDF100040021 /* LabelComponent.swift in Sources */,
 				7657FFC8231ABAA500552755 /* GameScene.swift in Sources */,
 				7657FFDC231E0E6700552755 /* SquareEntity.swift in Sources */,
 				76A63B31231F25510089216C /* SquareComponent.swift in Sources */,
 				7657FFDA231ABAE600552755 /* SKButtonNode.swift in Sources */,
+				76CDC93F2323EAF600040021 /* ButtonActions.swift in Sources */,
+				76CDC93C2323E9B300040021 /* ClickComponent.swift in Sources */,
 				7657FFCA231ABAA500552755 /* GameViewController.swift in Sources */,
+				7673EBA62322C7E8005A26C6 /* UIColor+Extensions.swift in Sources */,
 				7657FFC2231ABAA500552755 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

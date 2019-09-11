@@ -22,12 +22,18 @@ class SquareComponent: GKComponent {
     override func didAddToEntity() {
         super.didAddToEntity()
         
-        guard let node = self.entity?.component(ofType: GKSKNodeComponent.self)?.node else { return }
+        guard let node = self.entity?.component(
+            ofType: GKSKNodeComponent.self)?.node else { return }
         
         let squareNode = SKShapeNode(rectOf: size)
         squareNode.strokeColor = .clear
         squareNode.fillColor = .green
         node.addChild(squareNode)
+        
+        if node.userData != nil,
+            let color = node.userData!["color"] as? String {
+            squareNode.fillColor = .hexStringToUIColor(hex: color)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

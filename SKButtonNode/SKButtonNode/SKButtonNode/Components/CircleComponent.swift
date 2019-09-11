@@ -22,12 +22,18 @@ class CircleComponent: GKComponent {
     override func didAddToEntity() {
         super.didAddToEntity()
         
-        guard let node = self.entity?.component(ofType: GKSKNodeComponent.self)?.node else { return }
+        guard let node = self.entity?.component(
+            ofType: GKSKNodeComponent.self)?.node else { return }
         
         let circleNode = SKShapeNode(circleOfRadius: radius)
         circleNode.strokeColor = .clear
         circleNode.fillColor = .purple
         node.addChild(circleNode)
+        
+        if node.userData != nil,
+            let color = node.userData!["color"] as? String {
+            circleNode.fillColor = .hexStringToUIColor(hex: color)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
