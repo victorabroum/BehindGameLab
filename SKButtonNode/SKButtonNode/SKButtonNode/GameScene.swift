@@ -58,9 +58,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         centerNode.physicsBody = SKPhysicsBody(circleOfRadius: 30)
         centerNode.physicsBody!.affectedByGravity = false
-        centerNode.physicsBody!.categoryBitMask = 1
-        centerNode.physicsBody!.collisionBitMask = 0
-        centerNode.physicsBody!.contactTestBitMask = 1
+        centerNode.physicsBody!.categoryBitMask = .enemy
+        // Lê-se colisão com todas as categorias só que não!
+        centerNode.physicsBody!.collisionBitMask = ~(.contactWithAllCategories())
+        // Lê-se contato com todas as categorias
+        centerNode.physicsBody!.contactTestBitMask = .contactWithAllCategories()
         
         self.addChild(centerNode)
         
@@ -72,9 +74,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         playerNode.physicsBody = SKPhysicsBody(rectangleOf: playerNode.frame.size)
         playerNode.physicsBody!.affectedByGravity = false
-        playerNode.physicsBody!.categoryBitMask = 1
-        playerNode.physicsBody!.collisionBitMask = 0
-        playerNode.physicsBody!.contactTestBitMask = 1
+        playerNode.physicsBody!.categoryBitMask = .player
+        // Lê-se colisão com todas as categorias só que não!
+        playerNode.physicsBody!.collisionBitMask = ~(.contactWithAllCategories())
+        // Lê-se contato com todas as categorias menos a do player
+        playerNode.physicsBody!.contactTestBitMask = .contactWithAllCategories(less:[.player])
         
         let moveToRight = SKAction.moveBy(x: 400, y: 0, duration: 3)
         let sequence = SKAction.sequence([moveToRight, moveToRight.reversed()])

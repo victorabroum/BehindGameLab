@@ -24,6 +24,7 @@
 		76CDC93C2323E9B300040021 /* ClickComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CDC93B2323E9B300040021 /* ClickComponent.swift */; };
 		76CDC93F2323EAF600040021 /* ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CDC93E2323EAF600040021 /* ButtonActions.swift */; };
 		76CDC9412323EDF100040021 /* LabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CDC9402323EDF100040021 /* LabelComponent.swift */; };
+		76DF051423294EAF003FE3B4 /* SKPhysicsMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF051323294EAF003FE3B4 /* SKPhysicsMask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		76CDC93B2323E9B300040021 /* ClickComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickComponent.swift; sourceTree = "<group>"; };
 		76CDC93E2323EAF600040021 /* ButtonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActions.swift; sourceTree = "<group>"; };
 		76CDC9402323EDF100040021 /* LabelComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelComponent.swift; sourceTree = "<group>"; };
+		76DF051323294EAF003FE3B4 /* SKPhysicsMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKPhysicsMask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				76A63B2D231F25260089216C /* Components */,
 				7657FFDD231E0E6D00552755 /* Entities */,
 				7673EBA52322C7E8005A26C6 /* UIColor+Extensions.swift */,
+				76DF051323294EAF003FE3B4 /* SKPhysicsMask.swift */,
 			);
 			path = SKButtonNode;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				76A63B2F231F25430089216C /* CircleComponent.swift in Sources */,
 				76CDC9412323EDF100040021 /* LabelComponent.swift in Sources */,
 				7657FFC8231ABAA500552755 /* GameScene.swift in Sources */,
+				76DF051423294EAF003FE3B4 /* SKPhysicsMask.swift in Sources */,
 				7657FFDC231E0E6700552755 /* SquareEntity.swift in Sources */,
 				76A63B31231F25510089216C /* SquareComponent.swift in Sources */,
 				7657FFDA231ABAE600552755 /* SKButtonNode.swift in Sources */,
